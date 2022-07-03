@@ -133,7 +133,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FQ-RO-2dj">
                                 <rect key="frame" x="20" y="767" width="388" height="68"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.96470588450000005" green="0.78823530669999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="WMv-Ub-Tl1"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="iR3-Z3-dML"/>
@@ -146,7 +146,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0FQ-RO-2dj" secondAttribute="bottom" constant="57" id="O0R-bf-VyJ"/>
                             <constraint firstItem="0FQ-RO-2dj" firstAttribute="top" secondItem="gaC-cy-ELj" secondAttribute="bottom" priority="250" constant="49" id="UwH-79-qkB"/>
@@ -159,6 +159,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="BfB-wa-Bpx"/>
                     <connections>
+                        <outlet property="bottomView" destination="6Eu-Cb-1Fx" id="gh0-fI-eiA"/>
                         <outlet property="heightSlider" destination="5ph-4R-hiF" id="hj1-Dw-020"/>
                         <outlet property="hightLabel" destination="QyH-6q-7Qh" id="Cf7-6I-Vxc"/>
                         <outlet property="resultButton" destination="0FQ-RO-2dj" id="hwb-Xt-PBT"/>
@@ -307,9 +308,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="eXw-hq-cZk"/>
                     <connections>
+                        <outlet property="bottomView2" destination="xYu-lB-NOQ" id="Xob-ia-uXT"/>
                         <outlet property="descriptionLabel" destination="B6I-0e-kof" id="q4G-7E-ohj"/>
                         <outlet property="heightLabel" destination="tiK-k2-i75" id="AzZ-v0-BGb"/>
                         <outlet property="titleLabel" destination="bwJ-3C-cb2" id="Zpy-r6-OmP"/>
+                        <outlet property="topView2" destination="Lhe-L9-SWq" id="spf-Rj-gAL"/>
                         <outlet property="weightLabel" destination="YbA-qD-wzk" id="dc9-YO-Wq0"/>
                     </connections>
                 </viewController>
@@ -325,6 +328,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tYB-rs-X3l">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.78823530669999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
