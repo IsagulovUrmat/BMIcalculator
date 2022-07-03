@@ -29,9 +29,6 @@ class ViewController: UIViewController {
         self.title = "Stats!"
         
         initialSetUp()
-
-        
-
     }
     
     
@@ -47,34 +44,6 @@ class ViewController: UIViewController {
         height = Int(sender.value)
         
         hightLabel.text = "\(height) см"
-    }
-    
-    func findBMIindex(){
-        
-        let result = Float(weight) / pow(Float(height)/100, 2)
-        
-        if result < 16{
-            weightModel = .verySkinny
-        }
-        if result > 16 && result < 18.5{
-            weightModel = .skinny
-        }
-        if result > 18.25 && result < 25{
-            weightModel = .normal
-        }
-        if result > 25 && result < 30{
-            weightModel = .excessWeight
-        }
-        if result > 30 && result < 36{
-            weightModel = .obesityOfTheThirdDegree
-        }
-        if result > 35 && result < 41{
-            weightModel = .obesityOfTheSecondDegree
-        }
-        if result > 40{
-            weightModel = .excessWeight
-        }
-        
     }
     
     
